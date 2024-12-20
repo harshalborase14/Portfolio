@@ -18,6 +18,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <button id="darkModeToggle" class="dark-mode-btn">🌙</button>
     </header>
 
     <section id="home" class="hero">
@@ -64,7 +65,7 @@
 
     <section id="contact" class="contact">
         <h2>Contact Me</h2>
-        <form action="mailto:your-email@example.com" method="post" class="contact-form">
+        <form action="./SendEmailServlet" method="post" class="contact-form">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
@@ -75,5 +76,32 @@
     <footer class="footer">
         <p>&copy; 2024 Harshal. All rights reserved.</p>
     </footer>
+
+    <!-- JavaScript file or inline script -->
+    <script>
+        const toggleButton = document.getElementById("darkModeToggle");
+        const body = document.body;
+
+        // Check for saved theme preference
+        if (localStorage.getItem("darkMode") === "enabled") {
+            body.classList.add("dark-mode");
+            toggleButton.textContent = "☀️";
+        }
+
+        // Toggle dark mode
+        toggleButton.addEventListener("click", () => {
+            body.classList.toggle("dark-mode");
+
+            // Update button text
+            if (body.classList.contains("dark-mode")) {
+                toggleButton.textContent = "☀️"; // Light mode icon
+                localStorage.setItem("darkMode", "enabled");
+            } else {
+                toggleButton.textContent = "🌙"; // Dark mode icon
+                localStorage.setItem("darkMode", "disabled");
+        }
+    });
+
+    </script>
 </body>
 </html>
