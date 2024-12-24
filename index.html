@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harshal's Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header class="header">
@@ -16,6 +15,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="cv.html">My Resume</a></li> <!-- My Resume Option Added -->
             </ul>
         </nav>
         <button id="darkModeToggle" class="dark-mode-btn">🌙</button>
@@ -35,12 +35,16 @@
             <img src="pic.png" alt="Your Photo">
             <div class="about-text">
                 <p>
-                    I am a dedicated developer with project experience in building high-quality projects. I specialize in 
-                    Java, web development, and creating meaningful applications.
-                    <br>My Skills are FrontEnd(HTML,CSS,JSP), Back_End(Java),DataBase(SQL), Servlet, github,python etc
+                    I am a passionate <strong>Java Full Stack Developer</strong> with expertise in building end-to-end software solutions. I specialize in developing robust and scalable applications using <strong>Java</strong>, <strong>Spring Boot</strong>, <strong>JSP</strong>, and <strong>Servlets</strong> on the backend, and modern web technologies like <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong> on the frontend.
                 </p>
                 <p>
-                    I am always eager to learn new technologies and collaborate with creative individuals.
+                    With a strong foundation in <strong>database management</strong> using <strong>MySQL</strong>, I ensure efficient data handling and seamless integration with web and desktop-based applications. I am well-versed in tools like <strong>GitHub</strong> for version control, <strong>Apache Tomcat</strong> for server deployment, and <strong>JDBC</strong> for database connectivity.
+                </p>
+                <p>
+                    I enjoy working on challenging projects, collaborating with teams, and learning new technologies to enhance my skill set. My goal is to create impactful, user-friendly applications that solve real-world problems and add value to organizations.
+                </p>
+                <p>
+                    In addition to technical skills, I bring strong problem-solving abilities, a growth mindset, and a commitment to delivering high-quality results.
                 </p>
             </div>
         </div>
@@ -51,12 +55,12 @@
         <div class="project-grid">
             <div class="project-card">
                 <h3>Shopping Cart for Book Store</h3>
-                <p>This is simple java full stack project for book store.</p>
+                <p>This is a simple Java full-stack project for a book store.</p>
                 <a href="https://github.com/harshalborase14/Simple_Book-Store_Project/archive/refs/heads/main.zip" class="btn">View Project</a>
             </div>
             <div class="project-card">
                 <h3>Airline Reservation System</h3>
-                <p>This is Desktop based application of Airline Managemet System.</p>
+                <p>This is a desktop-based application for Airline Management System.</p>
                 <a href="https://github.com/harshalborase14/Airline-Reservation/archive/refs/heads/main.zip" class="btn">View Project</a>
             </div>
             <!-- Add more projects -->
@@ -99,9 +103,8 @@
             } else {
                 toggleButton.textContent = "🌙"; // Dark mode icon
                 localStorage.setItem("darkMode", "disabled");
-        }
-    });
-
+            }
+        });
     </script>
 </body>
 </html>
