@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Harshal Borase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">Harshal</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScUoxj2WOiUFlpALl-VtLILXcyzubxFqUNL8cVTkJcxOOP4fA/viewform">Contact</a></li>
+                <li><a href="cv.html">My Resume</a></li> <!-- My Resume Option Added -->
+            </ul>
+        </nav>
+        <button id="darkModeToggle" class="dark-mode-btn">🌙</button>
+    </header>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Shopping Cart for Book Store</h3>
+                <p>This is a simple Java full-stack project for a book store.</p>
+                <a href="https://github.com/harshalborase14/Simple_Book-Store_Project/archive/refs/heads/main.zip" class="btn">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Airline Reservation System</h3>
+                <p>This is a desktop-based application for Airline Management System.</p>
+                <a href="https://github.com/harshalborase14/Airline-Reservation/archive/refs/heads/main.zip" class="btn">View Project</a>
+            </div>
+            <!-- Add more projects -->
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Harshal. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript file or inline script -->
+    <script>
+        const toggleButton = document.getElementById("darkModeToggle");
+        const body = document.body;
+
+        // Check for saved theme preference
+        if (localStorage.getItem("darkMode") === "enabled") {
+            body.classList.add("dark-mode");
+            toggleButton.textContent = "☀️";
+        }
+
+        // Toggle dark mode
+        toggleButton.addEventListener("click", () => {
+            body.classList.toggle("dark-mode");
+
+            // Update button text
+            if (body.classList.contains("dark-mode")) {
+                toggleButton.textContent = "☀️"; // Light mode icon
+                localStorage.setItem("darkMode", "enabled");
+            } else {
+                toggleButton.textContent = "🌙"; // Dark mode icon
+                localStorage.setItem("darkMode", "disabled");
+            }
+        });
+    </script>
+</body>
+</html>
