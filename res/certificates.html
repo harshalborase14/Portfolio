@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates - Harshal's Portfolio</title>
+    <link rel="stylesheet" href="../Style.css">
+    <link rel="stylesheet" href="certificates.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Harshal</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScUoxj2WOiUFlpALl-VtLILXcyzubxFqUNL8cVTkJcxOOP4fA/viewform">Contact</a></li>
+                <li><a href="cv.html">My Resume</a></li>
+            </ul>
+        </nav>
+        <button id="darkModeToggle" class="dark-mode-btn">🌙</button>
+    </header>
+
+    <section id="certificates" class="certificates">
+        <h2>My Certificates</h2>
+        <div class="certificates-content">
+            <!-- Add your certificates here -->
+            <div class="certificate">
+                <img src="certificates.png" alt="Certificate 1">
+                <p>This certificate is awarded to Harshal for outstanding performance and dedication in the field of Java Full Stack Development<br>By Mindscript Tech</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Harshal. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const toggleButton = document.getElementById("darkModeToggle");
+        const body = document.body;
+
+        if (localStorage.getItem("darkMode") === "enabled") {
+            body.classList.add("dark-mode");
+            toggleButton.textContent = "☀️";
+        }
+
+        toggleButton.addEventListener("click", () => {
+            body.classList.toggle("dark-mode");
+
+            if (body.classList.contains("dark-mode")) {
+                toggleButton.textContent = "☀️";
+                localStorage.setItem("darkMode", "enabled");
+            } else {
+                toggleButton.textContent = "🌙";
+                localStorage.setItem("darkMode", "disabled");
+            }
+        });
+    </script>
+</body>
+</html>
