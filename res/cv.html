@@ -3,187 +3,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Harshal Tryambak Borase</title>
+    <title>Harshal Borase - Resume</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
         }
         .container {
             max-width: 800px;
             margin: 20px auto;
             background: #fff;
-            padding: 20px;
+            padding: 30px;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            position: relative;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
         }
-        h1, h2 {
-            color: #444;
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
         }
-        .section {
-            margin-bottom: 20px;
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #2c3e50;
         }
-        .section-title {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #444;
-            display: inline-block;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul li {
-            margin-bottom: 5px;
-        }
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .profile-photo {
-            position: absolute;
-            top: 30px;
-            right: 30px; /* Adjusted position */
-            width: 200px; /* Adjusted size */
-            height: 200px;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 3px solid #444;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        .profile-photo img {
-            margin-top: 30px;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .header p {
+            margin: 5px 0;
+            font-size: 1.1em;
+            color: #555;
         }
         .contact-info {
-            margin-right: 220px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
         }
-        .btn {
-            display: inline-block;
-            background-color: #007BFF;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-align: center;
+        .contact-info a {
             text-decoration: none;
+            color: #3498db;
             font-weight: bold;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .section h2 {
+            font-size: 1.8em;
+            color: #3498db;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .section p, .section ul {
+            margin: 0;
+            padding: 0;
+        }
+        .section ul {
+            list-style-type: none;
+        }
+        .job, .education-item, .project {
+            margin-bottom: 20px;
+        }
+        .job h3, .education-item h3, .project h3 {
+            margin: 0 0 5px 0;
+            font-size: 1.3em;
+            color: #2c3e50;
+        }
+        .job .company, .education-item .institution {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-bottom: 8px;
+        }
+        .job ul, .project ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skills-list li {
+            background: #ecf0f1;
+            color: #333;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.95em;
+        }
+        .skills-category {
+            margin-bottom: 15px;
+        }
+        .skills-category h4 {
+            margin: 0 0 8px 0;
+            color: #3498db;
+            font-size: 1.1em;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="profile-photo">
-            <img src="pic.png" alt="Profile Photo">
-        </div>
-        <div class="contact-info">
-            <h1>Harshal Tryambak Borase</h1>
-            <p><strong><strong>Email:</strong> <a href="mailto:htborase@gmail.com">htborase@gmail.com</a></p>
-            <p><strong>Portfolio:</strong> <a href="https://harshalborase14.github.io/Portfolio" target="_blank">harshalborase14.github.io/Portfolio</a></p>
-            <p><strong>GitHub:</strong> <a href="https://github.com/harshalborase14" target="_blank">github.com/harshalborase14</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/harshal-borase-357725329/" target="_blank">linkedin.com/in/harshal-borase-357725329</a></p>
-        </div>
-        <hr>
-        <div class="section">
-            <h2 class="section-title">Objective</h2>
-            <p>Currently pursuing my engineering with a strong foundation in Java programming, object-oriented design, and software development principles. Eager to apply academic knowledge and hands-on project experience in a real-world development environment. Seeking an entry-level Java programming role to contribute to innovative solutions while continuing to develop technical skills.</p>
-        </div>
-        <hr>
-        <div class="section">
-            <h2 class="section-title">Academic Qualification</h2>
+        <header class="header">
+            <h1>Harshal Borase</h1>
+            <p>Full Stack Web Developer</p>
+            <div class="contact-info">
+                <a href="mailto:htborase@gmail.com">htborase@gmail.com</a> |
+                <span>Pune, Maharashtra</span> |
+                <a href="https://github.com/harshalborase14" target="_blank">GitHub</a> |
+                <a href="https://www.linkedin.com/in/harshal-borase-357725329" target="_blank">LinkedIn</a>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2>Career Objective</h2>
+            <p>Passionate Full Stack Developer skilled in Java, Python, and Angular. Looking for an opportunity to build real-world software and grow in the IT industry.</p>
+        </section>
+
+        <section class="section">
+            <h2>Skills</h2>
+            <div class="skills-category">
+                <h4>Frontend</h4>
+                <ul class="skills-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Angular</li>
+                    <li>TypeScript</li>
+                </ul>
+            </div>
+            <div class="skills-category">
+                <h4>Backend</h4>
+                <ul class="skills-list">
+                    <li>Java</li>
+                    <li>Spring Boot</li>
+                    <li>Python</li>
+                    <li>Flask/Django</li>
+                </ul>
+            </div>
+            <div class="skills-category">
+                <h4>Database</h4>
+                <ul class="skills-list">
+                    <li>MySQL</li>
+                    <li>Hibernate</li>
+                    <li>JDBC</li>
+                </ul>
+            </div>
+            <div class="skills-category">
+                <h4>Tools</h4>
+                <ul class="skills-list">
+                    <li>GitHub</li>
+                    <li>Eclipse</li>
+                    <li>VS Code</li>
+                    <li>Postman</li>
+                    <li>REST APIs</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Work Experience</h2>
+            <div class="job">
+                <h3>Customer Service Executive</h3>
+                <p class="company">DBS Mintek Pvt. Ltd.</p>
+                <ul>
+                    <li>Client handling and technical coordination</li>
+                    <li>Data entry & system operations</li>
+                    <li>Customer record management and query resolution</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Customer Support Executive</h3>
+                <p class="company">Bajaj Finance Ltd.</p>
+                <ul>
+                    <li>Customer verification & loan data processing</li>
+                    <li>Working with backend systems & internal portals</li>
+                    <li>Issue resolution & client communication</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Attendance Tracking System – Full Stack</h3>
+                <ul>
+                    <li>Developed a system for marking employee attendance.</li>
+                    <li>Included an admin dashboard for monitoring and daily/monthly report generation.</li>
+                    <li>Built with a web-based UI featuring validations and a database-driven backend.</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>Hotel Management System – Java, JSP/Servlet, Hibernate</h3>
+                <ul>
+                    <li>Created a comprehensive system for room booking and customer management.</li>
+                    <li>Implemented an admin panel and a secure authentication system.</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>Book Management System – Java + MySQL</h3>
+                <ul>
+                    <li>Designed a system for CRUD (Create, Read, Update, Delete) operations on books.</li>
+                    <li>Utilized Hibernate ORM for database interactions and a clean JSP UI.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Diploma in Computer Engineering</h3>
+                <p class="institution">MSBTE, Maharashtra</p>
+            </div>
+            <div class="education-item">
+                <h3>SSC – 10th</h3>
+                <p class="institution">Maharashtra State Board</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Certifications</h2>
             <ul>
-                <li><strong>BE in Computer Engineering:</strong> Savitribai Phule Pune University (Currently in Third Year)</li>
-                <li><strong>Diploma in Computer Science:</strong> Marathwada Mitra Mandal’s Polytechnic (69%)</li>
-                <li><strong>SSC:</strong> Marathwada Mitra Mandal’s High School (62%)</li>
+                <li>Java Full Stack Development</li>
+                <li>Angular Frontend Development</li>
             </ul>
-        </div>
-        <hr>
-        <div class="section">
-            <h2 class="section-title">Technical Qualification</h2>
-            <ul>
-                <li><strong>Operating System:</strong> Windows 10/11</li>
-                <li><strong>Database:</strong> MySQL</li>
-                <li><strong>Technology:</strong> Java 8, SQL, JDBC, JSP</li>
-                <li><strong>Web Technology:</strong> HTML/JSP, CSS</li>
-                <li><strong>Tools:</strong> JDK 8.1, Eclipse Oxygen, MySQL Command Line Client</li>
-                <li><strong>Server:</strong> Apache Tomcat 9</li>
-            </ul>
-        </div>
-        <hr>
-        <div class="section">
-            <h2 class="section-title">Project</h2>
-            <p><strong>Project Name:</strong> Shopping Cart For Book Store</p>
-            <ul>
-                <li><strong>Technology Used:</strong> Java, SQL, JSP</li>
-                <li><strong>Operating System:</strong> Windows 11</li>
-                <li><strong>Description:</strong> This project is based on a Java web application, utilizing Servlet technology.</li>
-            </ul>
-            <br>
-            <p><strong>Project Name:</strong> Library Management System</p>
-            <ul>
-                <li><strong>Technology Used:</strong> Java, MySQL, JSP</li>
-                <li><strong>Operating System:</strong> Windows 11</li>
-                <li><strong>Description:</strong>  This is a web-based full-stack application for managing library operations.</li>
-            </ul>
-        </div>
-        <hr>
-        <div class="section">
-            <h2 class="section-title">Training / Courses</h2>
-            <ul>
-                <li>4 Months at Mindscript Tech</li>
-            </ul>
-        </div>
-        <hr>
-        <div class="section">
-            <h2 class="section-title">Certifications</h2>
-            <ul>
-                <li><strong>Web Development:</strong> Full Stack Web Development with Angular and Node.js</li>
-            </ul>
-        </div>
-        <hr>
-        <div class="section">
-            <h2 class="section-title">Personal Strength</h2>
-            <ul>
-                <li>Positive Thinking</li>
-                <li>Good Learner</li>
-                <li>Solving Puzzles</li>
-            </ul>
-        </div>
-        <hr>
-        <div class="section">
-            <h2 class="section-title">Hobbies</h2>
-            <ul>
-                <li>Drawing</li>
-                <li>Learning New Things</li>
-                <li>Coding</li>
-            </ul>
-        </div>
-        <hr>
-        <div class="section">
-            <h2 class="section-title">Personal Details</h2>
-            <ul>
-                <li><strong>Date of Birth:</strong> 14 Feb 2003</li>
-                <li><strong>Languages Known:</strong> English, Hindi, Marathi</li>
-                <li><strong>Address:</strong> Alandi, Pune</li>
-            </ul>
-        </div>
-        <hr>
-        <div class="section">
-            <h2 class="section-title">Declaration</h2>
-            <p>I hereby declare that the above information is true to the best of my knowledge.</p>
-        </div>
-        <div class="section">
-            <a href="Harshal Resume.pdf" download="Harshal's Resume" class="btn" style="display: inline-block; background-color: #007BFF; color: white; padding: 10px 20px; border-radius: 5px; text-align: center; text-decoration: none; font-weight: bold;">Download Resume</a>
-        </div>
+        </section>
+
+        <section class="section">
+            <h2>Strengths</h2>
+            <p>Fast learner, problem-solving mindset, ability to handle full project lifecycle, strong communication, self-driven.</p>
+        </section>
+
     </div>
 </body>
 </html>
